@@ -5,7 +5,7 @@ import { corsSuccessResponse, corsErrorResponse, runWarm } from './utils';
 const mercuryParser = async ({ queryStringParameters }, context, cb) => {
   const { url } = queryStringParameters;
 
-  const result = await Mercury.parse(url);
+  const result = await Mercury.parse(url, { contentType: 'text' });
 
   return cb(
     null,
