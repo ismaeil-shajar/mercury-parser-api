@@ -39,6 +39,10 @@ functions:
           method: get
           path: parser
           cors: true
+          authorizer:
+            arn: arn:aws:lambda:us-west-2:481177755946:function:mercury-api-authorizer
+            type: request
+            resultTtlInSeconds: 0
       # Ping every 5 minutes to avoid cold starts
       - schedule:
           rate: rate(5 minutes)
@@ -53,6 +57,10 @@ functions:
           method: post
           path: parse-html
           cors: true
+          authorizer:
+            arn: arn:aws:lambda:us-west-2:481177755946:function:mercury-api-authorizer
+            type: request
+            resultTtlInSeconds: 0
       # Ping every 5 minutes to avoid cold starts
       - schedule:
           rate: rate(5 minutes)
