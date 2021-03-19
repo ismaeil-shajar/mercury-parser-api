@@ -5,7 +5,7 @@ import { corsSuccessResponse, corsErrorResponse, runWarm } from './utils';
 const parseHtml = async ({ body }, context, cb) => {
   const { url, html } = JSON.parse(body);
 
-  const result = await Mercury.parse(url, { html, contentType: 'text' });
+  const result = await Mercury.parse(url, { html: Buffer.from(html, "utf-8") });
 
   return cb(
     null,
