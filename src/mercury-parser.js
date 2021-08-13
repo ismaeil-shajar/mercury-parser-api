@@ -1,4 +1,4 @@
-import Mercury from '@postlight/mercury-parser';
+import Mercury from '@RecastLLC/mercury-parser';
 
 import { corsSuccessResponse, corsErrorResponse, runWarm } from './utils';
 

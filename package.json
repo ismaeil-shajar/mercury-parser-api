@@ -19,12 +19,14 @@
     "test:watch": "jest --watch",
     "build": "serverless webpack",
     "test:parse": "serverless invoke local --function mercuryParser --path fixtures/nytimes.json",
+    "test:newyorker:parse": "serverless invoke local --function mercuryParser --path fixtures/newyorker.json",
     "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
   },
   "dependencies": {
-    "@postlight/mercury-parser": "git+https://github.com/postlight/mercury-parser.git",
+    "@RecastLLC/mercury-parser": "git+https://github.com/RecastLLC/mercury-parser.git",
     "@types/aws-lambda": "^8.10.64"
   },
+  "private": true,
   "devDependencies": {
     "@babel/core": "7.3.3",
     "@babel/preset-env": "7.3.1",
