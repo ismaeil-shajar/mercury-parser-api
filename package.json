@@ -22,6 +22,7 @@
     "build": "serverless webpack",
     "test:parse": "serverless invoke local --function mercuryParser --path fixtures/nytimes.json",
     "test:newyorker:parse": "serverless invoke local --function mercuryParser --path fixtures/newyorker.json",
+    "test:nymag:parse": "serverless invoke local --function mercuryParser --path fixtures/nymag.json",
     "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
   },
   "dependencies": {
