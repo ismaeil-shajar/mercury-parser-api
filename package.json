@@ -25,6 +25,7 @@
         "test:nymag:parse": "serverless invoke local --function mercuryParser --path fixtures/nymag.json",
         "test:engadget:parse": "serverless invoke local --function mercuryParser --path fixtures/engadget.json",
         "test:mattias:parse": "serverless invoke local --function mercuryParser --path fixtures/mattias.json",
+        "test:technologyreview:parse": "serverless invoke local --function mercuryParser --path fixtures/technologyreview.json",
         "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
     },
     "dependencies": {
