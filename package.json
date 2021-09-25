@@ -27,6 +27,7 @@
         "test:mattias:parse": "serverless invoke local --function mercuryParser --path fixtures/mattias.json",
         "test:technologyreview:parse": "serverless invoke local --function mercuryParser --path fixtures/technologyreview.json",
         "test:wired:parse": "serverless invoke local --function mercuryParser --path fixtures/wired.json",
+        "test:politico:parse": "serverless invoke local --function mercuryParser --path fixtures/politico.json",
         "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
     },
     "dependencies": {
