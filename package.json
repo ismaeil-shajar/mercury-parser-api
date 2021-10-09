@@ -28,7 +28,8 @@
         "test:technologyreview:parse": "serverless invoke local --function mercuryParser --path fixtures/technologyreview.json",
         "test:wired:parse": "serverless invoke local --function mercuryParser --path fixtures/wired.json",
         "test:politico:parse": "serverless invoke local --function mercuryParser --path fixtures/politico.json",
-        "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
+        "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json",
+        "test:buzzfeed": "serverless invoke local --function mercuryParser --path fixtures/buzzfeed.json"
     },
     "dependencies": {
         "@postlight/mercury-parser": "https://github.com/RecastLLC/mercury-parser.git",
