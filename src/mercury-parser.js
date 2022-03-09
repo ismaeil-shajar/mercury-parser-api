@@ -1,10 +1,11 @@
 import Mercury from '@postlight/mercury-parser';
 
 import { corsSuccessResponse, corsErrorResponse, runWarm } from './utils';
+import { NYTimesExtractor } from './ny-times-extractor';
 
 const mercuryParser = async ({ queryStringParameters }, context, cb) => {
   const { url } = queryStringParameters;
-
+  Mercury.addExtractor(NYTimesExtractor);
   const result = await Mercury.parse(url);
 
   return cb(
